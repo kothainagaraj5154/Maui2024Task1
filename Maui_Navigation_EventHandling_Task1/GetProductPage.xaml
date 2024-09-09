@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Maui_Navigation_EventHandling_Task1.GetProductPage"
+             Title="GetProductPage">
+     
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Padding="30">
+           <!-- Car Image -->
+            <Image
+                Source="black_super_car_2024.png"  
+                Aspect="AspectFill"
+                HeightRequest="100"
+                HorizontalOptions="FillAndExpand" />
+
+            <Label
+                Text="Car Model: Tata Nexon 2024"
+                FontSize="20"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Price: $22,999"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Description: The Tata Nexon 2024 is a modern compact SUV offering a blend of style, performance, and practicality. Features include a spacious interior, advanced infotainment system, and top-notch safety features."
+                FontSize="16"
+                HorizontalOptions="Center"
+                LineBreakMode="WordWrap" />
+
+            <!-- Specifications -->
+            <Label
+                Text="Specifications:"
+                FontSize="18"
+                FontAttributes="Bold"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="• Engine: 1.2L Turbo Petrol"
+                FontSize="16"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="• Transmission: 6-Speed Manual"
+                FontSize="16"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="• Fuel Efficiency: 17 km/l"
+                FontSize="16"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="• Safety Features: ABS, Airbags, Rear Parking Sensors"
+                FontSize="16"
+                HorizontalOptions="Center" />
+
+            <!-- Back Button -->
+            <Button
+                Text="Back to Home"
+                Clicked="OnBackButtonClicked" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

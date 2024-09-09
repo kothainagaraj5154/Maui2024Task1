@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Maui_Navigation_EventHandling_Task1.UserInputPage"
+             Title="UserInputPage">
+    <VerticalStackLayout Spacing="25" Padding="30">
+        <!-- Entry Field for User Input -->
+        <Entry
+            x:Name="inputEntry"
+            Placeholder="Enter your text here"
+            FontSize="18"
+            HorizontalOptions="FillAndExpand" />
+
+        <!-- Button to Update Label -->
+        <Button
+            Text="Submit"
+            FontSize="18"
+            Clicked="OnSubmitButtonClicked" />
+
+        <!-- Label to Display Updated Text -->
+        <Label
+            x:Name="displayLabel"
+            Text="Your input will be shown here"
+            FontSize="18"
+            HorizontalOptions="Center"
+            LineBreakMode="WordWrap" />
+    </VerticalStackLayout>
+</ContentPage>
